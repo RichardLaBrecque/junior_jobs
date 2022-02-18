@@ -1,0 +1,5 @@
+<% @companies.each do |company| %>
+<%= company.name %>
+<%= company.state %>
+<%= link_to "Learn more about #{company.name}",  "/companies/#{company.id}" %>
+<% end %>
