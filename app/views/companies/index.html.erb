@@ -1,5 +1,5 @@
 <% @companies.each do |company| %>
-<%= company.name %>
-<%= company.state %>
-<%= link_to "Learn more about #{company.name}",  "/companies/#{company.id}" %>
+  <%= company.company_name %>
+  <%= company.state %>
+  <%= link_to "Learn more about #{company.company_name}",  "/companies/#{company.id}" %>
 <% end %>
